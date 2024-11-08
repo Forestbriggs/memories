@@ -19,7 +19,7 @@ public class View {
         io.println("2. Add a Memory");
         io.println("3. Update a Memory");
         io.println("4. Delete a Memory");
-        return io.readInt("Choose [0-4]:", 0, 4);
+        return io.readInt("Choose [0-4]: ", 0, 4);
     }
 
     public Memory chooseMemory(List<Memory> memories) {
