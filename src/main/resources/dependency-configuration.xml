@@ -4,11 +4,11 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Define beans here. -->
-    <bean id="memoryRepository" class="learn.memories.data.MemoryFileRepositroy">
+    <bean id="memoryRepository" class="learn.memories.data.MemoryFileRepository">
         <constructor-arg value="./data/memories.txt" />
     </bean>
 
-    <bean id="memoryService" class="learn.memories.data.MemoryService">
+    <bean id="memoryService" class="learn.memories.domain.MemoryService">
         <constructor-arg ref="memoryRepository" />
     </bean>
 
@@ -18,7 +18,7 @@
         <constructor-arg ref="io" />
     </bean>
 
-    <bean class="learn.memoires.ui.Controller">
+    <bean class="learn.memories.ui.Controller">
         <constructor-arg ref="view" />
         <constructor-arg ref="memoryService" />
     </bean>
