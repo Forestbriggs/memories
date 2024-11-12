@@ -18,3 +18,5 @@ buildNumber.properties
 
 # "Production" file
 /data/memories.txt
+
+.vscode
