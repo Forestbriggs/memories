@@ -2,11 +2,14 @@ package learn.memories.ui;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import learn.memories.data.DataAccessException;
 import learn.memories.domain.MemoryResult;
 import learn.memories.domain.MemoryService;
 import learn.memories.models.Memory;
 
+@Component
 public class Controller {
 
     private final View view;

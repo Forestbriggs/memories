@@ -2,10 +2,13 @@ package learn.memories.domain;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import learn.memories.data.DataAccessException;
 import learn.memories.data.MemoryRepository;
 import learn.memories.models.Memory;
 
+@Service
 public class MemoryService {
 
     private final MemoryRepository repository;

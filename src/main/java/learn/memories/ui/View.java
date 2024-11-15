@@ -2,8 +2,11 @@ package learn.memories.ui;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import learn.memories.models.Memory;
 
+@Component
 public class View {
 
     private final TextIO io;
